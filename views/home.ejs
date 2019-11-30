@@ -1,0 +1,76 @@
+<%- include('header') %>
+<div class="content">
+  <header>
+    <h1>
+      <a href="/">
+        <img src="/images/avatar.jpeg" alt="Foto de perfil" class="avatar">
+      </a>
+    </h1>
+    <h2>Carlos Henrique Matias Barbosa</h2>
+    <div class="container-social">
+      <a href="https://github.com/henriquemats" target="blank"><img src="/images/github.svg" alt="github" class="icon-social"></a>
+      <a href="https://www.linkedin.com/in/carlos-henrique-949714179/" target="blank"><img src="/images/linkedin.svg" alt="linkedin" class="icon-social"></a>
+    </div>
+  </header>
+  <section class="informations">
+    <section class="formation">
+      <h2>Formação</h2>
+      <% formations.forEach(formation => { %>
+        <div class="formation-item">
+          <h3 class="office"><%- formation.course %></h3>
+          <p class="period"><%- formation.start %> | <%- formation.end %></p>
+          <p><%- formation.institution %></p>
+        </div>
+      <% }) %>
+    </section>
+    <hr>
+    <section class="experience">
+      <h2>Experiência profissional</h2>
+      <% experiences.forEach(experience => { %>
+        <div class="experience-item">
+          <h3 class="office"><%- experience.office %></h3>
+          <p><%- experience.company %></p>
+          <p class="period"><%- experience.period %></p>
+          <p><%- experience.activities %></p>
+        </div>
+      <% }) %>
+    </section>
+    <hr>
+    <section class="other-activities">
+      <h2>Outras atividades</h2>
+      <% activities.forEach(activity => { %>
+        <div class="activity-item">
+          <h3 class="office"><%- activity.title %></h3>
+          <p><%- activity.institution %></p>
+          <p class="period"><%- activity.period %></p>
+          <p><%- activity.description %></p>
+        </div>
+      <% }) %>
+    </section>
+    <hr>
+  </section>
+  <section class="skills">
+      <h2>Habilidades</h2>
+      <% skills.forEach(abiliity => { %>
+        <div class="abiliity-item">
+          <h3 class="office"><%- abiliity.name %></h3>
+          <p><%- abiliity.level %></p>
+        </div>
+      <% }) %>
+    </section>
+    <hr>
+  </section>
+  <section class="languages">
+      <h2>Línguas</h2>
+      <% languages.forEach(language => { %>
+        <div class="language-item">
+          <h3 class="office"><%- language.name %></h3>
+          <p><%- language.level %></p>
+          <p><%- language.complement %></p>
+        </div>
+      <% }) %>
+    </section>
+    <hr>
+  </section>
+</div>
+<%- include('footer') %>

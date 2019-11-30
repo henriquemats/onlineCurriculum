@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background: #000;
+}
+
+body, input, button {
+  font: 14px 'Roboto', sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+header h2 {
+  margin: 20px;
+}
+
+section :not(h2) {
+  margin: 5px 10px;
+}
+
+section h2 {
+  margin: 10px 0;
+}
+
+section div {
+  padding: 5px;
+}
+
+.container-social {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-social img {
+  margin: 0 10px;
+}
+
+.icon-social {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.content {
+  margin: 30px 150px;
+  padding: 40px;
+  background: #fff;
+  border-radius: 10px;
+  border: 0;
+}
+
+.avatar {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.office {
+  color: #000000e6;
+}
+
+.period {
+  color: #0009;
+}
+
+.author-information {
+  color: #0009
+}
